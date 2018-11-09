@@ -1,0 +1,7 @@
+//woocomerce
+function tutsplus_excerpt_in_product_archives() {
+
+    the_excerpt();
+
+}
+add_action( 'woocommerce_after_shop_loop_item_title', 'tutsplus_excerpt_in_product_archives', 40 );
